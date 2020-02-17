@@ -19,7 +19,7 @@ class UserCard extends React.Component {
         return (
             <div className="userCard">
                 <Card>
-                    <CardMedia component="img" image="https://avatars1.githubusercontent.com/u/17837575?s=460&v=4" height="200" />
+                    <CardMedia component="img" image={this.props.avatar} height="200" />
                     <CardContent>
                         <Typography
                             gutterBottom
