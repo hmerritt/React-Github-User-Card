@@ -49,3 +49,8 @@
     margin: 80px;
     border-top: 1px solid #ccc;
 }
+
+.github-contributions {
+    max-width: 830px;
+    margin: 0 auto;
+}

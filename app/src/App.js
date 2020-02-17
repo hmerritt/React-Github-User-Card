@@ -3,6 +3,7 @@ import { Container } from "@material-ui/core";
 import Header from "./components/header/header";
 import UserCard from "./components/userCard/userCard";
 import ListUserCards from './components/listUserCards';
+import GithubContributions from './components/githubContributions';
 import axios from 'axios';
 import "./App.css";
 
@@ -76,6 +77,9 @@ class App extends React.Component {
                             url={this.state.user.url}
                             avatar={this.state.user.avatar}
                         />
+
+                        <GithubContributions username={this.state.user.username} />
+
                         <hr />
                         <ListUserCards users={this.state.followers} />
                     </Container>

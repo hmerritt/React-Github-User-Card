@@ -12,6 +12,7 @@ class ListUserCards extends React.Component {
                 {
                     this.props.users.map((user) => {
                         return <UserCard
+                            key={user.username}
                             name={user.name}
                             username={user.username}
                             bio={user.bio}
