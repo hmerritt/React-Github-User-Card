@@ -44,3 +44,8 @@
 .content {
     margin-top: 50px;
 }
+
+.content hr {
+    margin: 80px;
+    border-top: 1px solid #ccc;
+}
