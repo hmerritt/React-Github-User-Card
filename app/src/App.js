@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "@material-ui/core";
 import Header from "./components/header/header";
 import UserCard from "./components/userCard/userCard";
+import ListUserCards from './components/listUserCards';
 import axios from 'axios';
 import "./App.css";
 
@@ -76,7 +77,7 @@ class App extends React.Component {
                             avatar={this.state.user.avatar}
                         />
                         <hr />
-                        {/*<ListUserCards users={this.state.followers} />*/}
+                        <ListUserCards users={this.state.followers} />
                     </Container>
                 </div>
             </>
